@@ -1,0 +1,371 @@
+/* Variables */
+/* Variables */
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Raleway&display=swap");
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+}
+
+.nav-link {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Fonts */
+/* Header */
+nav {
+  padding: 15px;
+  font-size: 15px;
+  line-height: 27px;
+  background-color: #f8f9fa;
+}
+nav .nav-item .nav-link {
+  color: #c32b2c !important;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+nav .nav-item .dropdown-menu .dropdown-item {
+  text-transform: uppercase;
+  color: #c32b2c;
+}
+nav .nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: #ac9949;
+  color: #ffffff;
+  font-weight: 900;
+}
+nav .dropdown:hover .dropdown-menu {
+  display: block !important;
+}
+nav .side-nav .call-nav li {
+  padding: 0 8px;
+}
+nav .side-nav .call-nav li a {
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 5px;
+  font-size: 15px;
+  line-height: 27px;
+}
+
+@media (min-width: 992px) {
+  nav {
+    margin: 0 60px;
+  }
+
+  .hide-small {
+    display: none;
+  }
+}
+/* Header */
+/* Carousel */
+.carousel-item .carousel-caption {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)) !important;
+}
+.carousel-item .carousel-caption h3 {
+  font-size: 4vw;
+}
+.carousel-item .carousel-caption p {
+  text-transform: uppercase;
+  font-size: 2vw;
+}
+
+/* Carousel */
+/* Main Content */
+.main-content {
+  padding: 40px 16px;
+  text-align: center;
+}
+.main-content p {
+  font-size: 13px;
+  line-height: 23.4px;
+  font-weight: 600;
+}
+.main-content h1 {
+  font-size: 38px;
+  line-height: 57px;
+  color: #c32b2c;
+}
+.main-content .p {
+  font-size: 15px;
+  line-height: 27px;
+  font-weight: 100;
+}
+.main-content .p a {
+  color: #ac9949;
+  font-size: 30px;
+}
+.main-content .p a:hover {
+  color: #c32b2c;
+}
+
+.why-choose-us .row {
+  padding: 0 4%;
+}
+.why-choose-us .row .col-md-2 {
+  padding: 2% 0.5%;
+}
+.why-choose-us .row .col-md-2 div {
+  background-color: #ac9949;
+  color: #ffffff;
+  margin: 5px;
+  border-radius: 2%;
+  height: 100%;
+}
+.why-choose-us .row .col-md-2 div h2 {
+  font-size: 54px;
+  line-height: 70.2px;
+}
+.why-choose-us .row .col-md-2 div h6 {
+  font-size: 20px;
+  line-height: 30px;
+}
+.why-choose-us .row .col-md-2 div:hover {
+  background-color: #c32b2c;
+  color: #ffe000;
+}
+
+/* Main Content */
+/* Home Rooms */
+.home-rooms {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+.home-rooms .container {
+  padding-bottom: 20px;
+}
+.home-rooms .container-fluid {
+  background-color: #ac9949;
+}
+.home-rooms .container-fluid .row {
+  height: auto;
+}
+.home-rooms .container-fluid .row .bg-img {
+  background: url(../img/Room\ 1/IMG_9535_6_7.jpg) center center;
+  background-size: cover;
+}
+.home-rooms .container-fluid .row .bg-img1 {
+  background: url(../img/r3.jpeg) center center;
+  background-size: cover;
+}
+.home-rooms .container-fluid .row .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 900;
+}
+.home-rooms .container-fluid .row .col-md-6 h4 {
+  padding: 3% 0;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.home-rooms .container-fluid .row .col-md-6 p {
+  font-size: 18px;
+}
+.home-rooms .container-fluid .row .col-md-6 p a {
+  font-size: 15px;
+  color: #ffffff;
+  padding: 5px;
+  border: 1px solid #ffffff;
+}
+.home-rooms .container-fluid .row .col-md-6 p a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #c32b2c;
+  border-color: #ffffff;
+}
+
+/* Home Rooms */
+/* Nearby Places */
+.nearby-places {
+  padding: 20px;
+}
+.nearby-places .col p {
+  font-size: 13px;
+  line-height: 23.4px;
+}
+.nearby-places .col h1 {
+  font-size: 38px;
+  line-height: 57px;
+}
+
+.places-list .col-md-2 {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #f8f9fa;
+  margin-bottom: 30px;
+}
+
+/* Nearby Places */
+/* Footer */
+.footer {
+  padding: 4.5%;
+  background-color: #ac9949;
+  color: #ffffff;
+}
+.footer .row .col-md-4 p a {
+  color: #000000;
+}
+.footer .row .col-md-4 div h2 a {
+  color: #000000;
+}
+.footer div p a {
+  color: #ffffff;
+}
+
+/* .footer:hover {
+  background-color: #c32b2c;
+} */
+.footer:hover div p a {
+  color: #ac9949;
+}
+
+/* Footer */
+/* Rooms Page */
+.home-rooms1 {
+  padding: 50px 0;
+  background-color: #ffffff;
+  color: #ffffff;
+}
+.home-rooms1 .container-fluid {
+  background-color: #ac9949;
+}
+.home-rooms1 .container-fluid .row {
+  height: auto;
+}
+.home-rooms1 .container-fluid .row .bg-img {
+  background: url(../img/Room\ 1/IMG_9535_6_7.jpg) center center;
+  background-size: cover;
+}
+.home-rooms1 .container-fluid .row .bg-img1 {
+  background: url(../img/Room\ 1/IMG_9532_3_4.jpg) center center;
+  background-size: cover;
+}
+.home-rooms1 .container-fluid .row .bg-img2 {
+  background: url(../img/Room\ 1/IMG_9520_1_2.jpg) center center;
+  background-size: cover;
+}
+.home-rooms1 .container-fluid .row .bg-img3 {
+  background: url(../img/Room\ 1/IMG_9508_09_10.jpg) center center;
+  background-size: cover;
+}
+
+
+.home-rooms1 .container-fluid .row .bg-img4 {
+  background: url(../img/r3.jpeg) center center;
+  background-size: cover;
+}
+
+.home-rooms1 .container-fluid .row .col-md-4 {
+  height: 300px;
+}
+.home-rooms1 .container-fluid .row .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  justify-content: center;
+}
+.home-rooms1 .container-fluid .row .col-md-6 h4 {
+  padding: 20px 0;
+  text-decoration: underline;
+  font-size: 30px;
+}
+.icon-col{
+color: #ac9949;
+}
+.home-rooms1 .container-fluid .row .col-md-6 p {
+  font-size: 20px;
+}
+.home-rooms1 .container-fluid .row .col-md-6 p a {
+  font-size: 15px;
+  color: #ffffff;
+  padding: 5px;
+  border: 1px solid #ffffff;
+}
+.home-rooms1 .container-fluid .row .col-md-6 p a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #c32b2c;
+  border-color: #ffffff;
+}
+.home-rooms1 .container-fluid .room-amenities {
+  background-color: #fff;
+  padding: 3% 0;
+  color: #ac9949;
+}
+.home-rooms1 .container-fluid .room-amenities .col-md-4 {
+  padding: 1% !important;
+  margin: 0;
+  height: auto !important;
+}
+
+/* Rooms Page */
+/* Contact Us Page */
+.contact-container {
+  padding: 30px;
+}
+.contact-container .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-container .row .col-md-4 {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+}
+.contact-container .row .col-md-4 div {
+  padding: 15px;
+  background-color: #c32b2c;
+  border-radius: 5px;
+  height: 1000%;
+  color: #ffe000;
+}
+.contact-container .form-map {
+  margin: 15px 0;
+}
+.contact-container .form-map .col-md-6 {
+  border-radius: 5px;
+  margin: 5px 0;
+}
+.contact-container .form-map .map-form {
+  padding: 15px;
+  background-color: #f8f9fa;
+  border: 2px solid #ac9949;
+}
+.contact-container .form-map .map-form .btn {
+  border: none;
+  background-color: #ac9949;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+/* Contact Us Page */
+/* Offers page */
+.offers-section {
+  padding: 30px;
+}
+
+.offers-section-2 {
+  padding: 50px;
+}
+
+/* Offers page */
+/* Gallery */
+.gallery-section {
+  padding: 30px;
+}
+
+.gallery {
+  padding: 30px 0;
+}
+
+/* Gallery */
+
+/*# sourceMappingURL=style.css.map */

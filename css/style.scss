@@ -1,0 +1,434 @@
+/* Variables */
+$colors: (
+    color1: #ffffff,
+    color2: #000000,
+    color3: #ffe000,
+    color4: #f8f9fa,
+    color5: #c32b2c,
+    color6: #ac9949,
+);
+
+@function color( $colori){
+    @return map-get($colors, $colori);
+};
+/* Variables */
+
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway&display=swap');
+h1, h2,h3, h4, h5, h6{
+    font-family: 'Playfair Display', serif;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+}
+.nav-link{
+    font-family: 'Raleway', sans-serif;
+}
+/* Fonts */
+
+
+/* Header */
+nav{
+    padding: 15px;
+    font-size: 15px;
+    line-height: 27px;
+    background-color: color(color4);
+    .nav-item{
+        .nav-link{
+            color: color(color5) !important;
+            text-transform: uppercase;
+            font-size: 15px;
+            
+        }
+        .dropdown-menu{
+            .dropdown-item{
+                text-transform: uppercase;
+                color: color(color5);
+            }
+            .dropdown-item:hover{
+                background-color: color(color6);
+                color: color(color1);
+                font-weight: 900;
+            }
+        }
+    }
+    .dropdown:hover{
+        .dropdown-menu{
+            display: block !important;
+        }
+    }
+    .side-nav{
+        .call-nav{
+            li{
+                padding: 0 8px;
+                a{
+                    color: color(color2);
+                    border: 1px solid color(color2);
+                    padding: 5px;
+                    font-size: 15px;
+                    line-height: 27px;
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width: 992px){
+    nav{
+        margin: 0 60px;
+    }
+    .hide-small{
+        display: none;
+    }
+}
+/* Header */
+
+
+
+/* Carousel */
+.carousel-item{
+    
+
+    .carousel-caption{
+        background: linear-gradient( rgba(0,0,0,0.1), rgba(0,0,0,0.4) ) !important;
+        h3{
+            font-size: 4vw;
+        }
+        p{
+            text-transform: uppercase;
+            font-size: 2vw
+        }
+    }
+}
+/* Carousel */
+
+/* Main Content */
+.main-content{
+    padding: 40px 16px;
+    text-align: center;
+    p{
+        font-size: 13px;
+        line-height: 23.4px;
+        font-weight: 600;
+    }
+    h1{
+        font-size: 38px;
+        line-height: 57px;
+        color: color(color5)
+    }
+    .p{
+        font-size: 15px;
+        line-height: 27px;
+        font-weight: 100;
+        a{
+            color: color(color6);
+            font-size: 30px;
+        }
+        a:hover{
+            color: color(color5);
+        }
+    }
+    
+}
+.why-choose-us{
+    .row{
+        padding: 0 4%;
+        .col-md-2{
+            padding: 2% 0.5%;
+            
+            div{
+                background-color: color(color6);
+                color: color(color1);
+                margin: 5px;
+                border-radius: 2%;
+                height: 100%;
+                h2{
+                    font-size: 54px;
+                    line-height: 70.2px;
+                }
+                h6{
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+                
+            }
+            div:hover{
+                background-color: color(color5);
+                color: color(color3);
+            }
+        }
+    }
+}
+/* Main Content */
+
+/* Home Rooms */
+.home-rooms{
+    padding: 50px 0;
+    background-color: color(color4);
+    .container{
+        padding-bottom: 20px;
+    }
+    .container-fluid{
+        // background-color: color(color6);
+        .row{
+            height: auto;
+            .bg-img{
+                background: url(../img/minerva/DeluxeDouble.jpg) center center;
+                background-size: cover;
+            }
+            .bg-img1{
+                background: url(../img/minerva/DeluxeTriple.jpg) center center;
+                background-size: cover;
+            }
+            .col-md-6{
+                display: flex;
+                flex-direction: column;
+                height: 450px;
+                justify-content: center;
+                color: color(color1);
+                font-weight: 900;
+    
+                h4{
+                    padding: 3% 0;
+                    font-size: 30px;
+                    text-transform: uppercase;
+                }
+                p{
+                    font-size: 18px;
+                    a{
+                        font-size: 15px;
+                        color: color(color1);
+                        padding: 5px;
+                        border: 1px solid color(color1);
+                    }
+                    a:hover{
+                        color: color(color1);
+                        text-decoration: none;
+                        background-color: color(color5);
+                        border-color: color(color1);
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+/* Home Rooms */
+
+/* Nearby Places */
+.nearby-places{
+    padding: 20px;
+
+    .col{
+        p{
+            font-size: 13px;
+            line-height: 23.4px
+        }
+        h1{
+            font-size: 38px;
+            line-height:57px;
+        }
+    }
+}
+.places-list{
+    .col-md-2{
+        height: 200px;
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center;
+        color: color(color4);
+        margin-bottom: 30px;
+    }
+}
+/* Nearby Places */
+/* Footer */
+.footer{
+    padding: 4.5%;
+    background-color: color(color6);
+    color: color(color1);
+    .row{
+        .col-md-4{
+            p{
+                a{
+                    color: color(color2);
+                }
+            }
+            div{
+                h2{
+                    a{
+                        color: color(color2);
+                    }
+                }
+            }
+        }
+    }
+    div{
+        p{
+            a{
+                color: color(color1);
+            }
+        }
+    }
+}
+.footer:hover{
+    background-color: color(color5);
+    div{
+        p{
+            a{
+                color: color(color6);
+            }
+        }
+    }
+}
+/* Footer */
+
+/* Rooms Page */
+.home-rooms1{
+    padding: 50px 0;
+    background-color: color(color1);
+    color: color(color1);
+    
+    .container-fluid{
+        background-color: color(color6);
+        .row{
+            height: auto;
+            .bg-img{
+                background: url(../img/minerva/DeluxeDouble.jpg) center center;
+                background-size: cover;
+            }
+            .bg-img1{
+                background: url(../img/minerva/DeluxeDouble1.jpg) center center;
+                background-size: cover;
+            }
+            .bg-img2{
+                background: url(../img/minerva/DeluxeDouble2.jpg) center center;
+                background-size: cover;
+            }
+            .bg-img3{
+                background: url(../img/minerva/DeluxeDouble3.jpg) center center;
+                background-size: cover;
+            }
+            .bg-img4{
+                background: url(../img/minerva/DeluxeTriple.jpg) center center;
+                background-size: cover;
+            }
+            .bg-img5{
+                background: url(../img/minerva/DeluxeTriple2.jpg) center center;
+                background-size: cover;
+            }
+            .bg-img6{
+                background: url(../img/minerva/DeluxeTriple3.jpg) center center;
+                background-size: cover;
+            }
+            .bg-img7{
+                background: url(../img/minerva/DeluxeTriple4.jpg) center center;
+                background-size: cover;
+            }
+            .col-md-4{
+                height: 300px;
+            }
+            .col-md-6{
+                display: flex;
+                flex-direction: column;
+                height: 450px;
+                justify-content: center;
+    
+                h4{
+                    padding: 20px 0;
+                    text-decoration: underline;
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 20px;
+                    a{
+                        font-size: 15px;
+                        color: color(color1);
+                        padding: 5px;
+                        border: 1px solid color(color1);
+                    }
+                    a:hover{
+                        color: color(color1);
+                        text-decoration: none;
+                        background-color: color(color5);
+                        border-color: color(color1);
+                    }
+                }
+            }
+        }
+        .room-amenities{
+            background-color: color(color5);
+            padding: 3% 0;
+            color: color(color3);
+            .col-md-4{
+                padding: 1% !important;
+                margin: 0;
+                height: auto  !important;
+            }
+        }
+    }
+    
+}
+/* Rooms Page */
+
+/* Contact Us Page */
+.contact-container{
+    padding: 30px;
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        .col-md-4{
+            display: flex;
+            flex-direction: column;
+            margin: 5px 0;
+            div{
+                padding: 15px;
+                background-color: color(color5);
+                border-radius: 5px;
+                height: 1000%;
+                color: color(color3);
+            }
+        }
+    }
+    .form-map{
+        margin: 15px 0;
+        .col-md-6{
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+        .map-form{
+            padding: 15px;
+            background-color: color(color4);
+            border: 2px solid color(color6);
+            .btn{
+                border: none;
+                background-color: color(color6);
+                text-transform: uppercase;
+                color: color(color1);
+                font-weight: 900;
+            }
+        }
+    }
+}
+/* Contact Us Page */
+
+/* Offers page */
+.offers-section{
+    padding: 30px;
+}
+.offers-section-2{
+    padding: 50px;
+}
+/* Offers page */
+
+/* Gallery */
+.gallery-section{
+    padding: 30px;
+}
+
+.gallery{
+    padding: 30px 0;
+}
+/* Gallery */
